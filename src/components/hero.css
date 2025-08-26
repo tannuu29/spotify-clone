@@ -1,0 +1,26 @@
+
+.create-container{
+    background-color: rgb(54, 54, 54);
+    height: 19vh;
+    border-radius: 0.6rem;
+    margin-top: 10px;
+}
+
+.create-container{
+    padding: 0.5rem;
+    margin: 0.4rem ;
+}
+.create-span span{
+    display: block;
+    margin: 0.6rem;
+}
+.c-span2{
+    font-size: small;
+}
+
+.create-container button{
+    margin: 0.6rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.6rem;
+}

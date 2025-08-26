@@ -1,0 +1,30 @@
+.border {
+    border: 2px solid rebeccapurple;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.nav-center {
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 6px;
+}
+
+
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.invert {
+    filter : invert(1);
+}
+
+.icon {
+    opacity: 0.6;
+    filter: brightness(90%);
+}
