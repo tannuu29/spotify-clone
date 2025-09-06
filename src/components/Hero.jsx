@@ -1,5 +1,7 @@
 import React from 'react'
 import create from '../assets/images/create.svg'
+import play from '../assets/images/play.svg'
+import globe from '../assets/images/globe.svg'
 import './hero.css'
 
 export default function Hero() {
@@ -15,6 +17,7 @@ export default function Hero() {
                         </button>
                         {/* </div>  */}
                     </div>
+                    <div className='create-box'>
                     <section className='create-container'>
                         <div className='create-span'>
                             <span className='c-span1'>Create your first playlist </span>
@@ -33,6 +36,7 @@ export default function Hero() {
                             <button>Browse podcasts</button>
                         </div>
                     </section>
+                    </div>
 
                     <div className="footer">
                         <div className="link">
@@ -47,6 +51,8 @@ export default function Hero() {
                             <a href="https://www.spotify.com/legal/cookies-policy/"
                                 target="_blank" rel="noopener">Cookies</a>
                         </div>
+                        <button className='lang-btn'><img src={globe} alt="" /> 
+                        <p>English</p></button>
                     </div>
                     {/* </div> */}
 
@@ -60,20 +66,81 @@ export default function Hero() {
                         <h1 style={{ margin: '20px', fontWeight: 'bold' }}>Trending songs</h1>
                         <div className="card-container">
                             <div className="card">
-                                      <div className="play">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
-                                        {/* <!-- Green circular background --> */}
-                                        <circle cx="12" cy="12" r="12" fill="green" />
-
-                                        {/* <!-- Solid play triangle --> */}
-                                        <polygon points="9,7 9,17 17,12" fill="black" />
-                                    </svg>
+                                <div className="play hidden">
+                                    <img src={play} alt="" />
                                 </div>
                                 <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
                                 <h3>Sapphire</h3>
                                 <p>Ed sheeran</p>
                             </div>
                             <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
+                                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
+                                <h3>Sapphire</h3>
+                                <p>Ed sheeran</p>
+                            </div>
+                            <div className="card">
+                                <div className="play"><img src={play} alt="" /></div>
                                 <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="" />
                                 <h3>Sapphire</h3>
                                 <p>Ed sheeran</p>

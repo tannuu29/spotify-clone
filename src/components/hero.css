@@ -1,4 +1,19 @@
+.lang-btn{
+    display: flex;
+    height: 30px;
+    width: 100px;
+    gap: 10px;
+    margin: 5px;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid white;
+}
 
+.lang-btn p{
+    color: white;
+}
 .create-container{
     background-color: rgb(54, 54, 54);
     height: 19vh;
@@ -27,7 +42,36 @@
 
 .card-container{
     display: flex;
+     display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
+/* Works in Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;              /* width of vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;      /* dark background (track) */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;         /* grey thumb */
+  border-radius: 6px;       /* rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;         /* lighter on hover */
+}
+
+/* Works in Firefox */
+* {
+  scrollbar-width: thin;           /* thin scrollbar */
+  scrollbar-color: #444 #121212;   /* thumb color | track color */
+}
+
 
 .card{
  width: 160px;  
@@ -57,4 +101,6 @@
     position: absolute;
     right: 10px;
     bottom: 55px;
+    opacity: 1;
+    transition: all 1s ease-out;
 }
