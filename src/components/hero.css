@@ -24,3 +24,37 @@
     border-radius: 1rem;
     padding: 0.6rem;
 }
+
+.card-container{
+    display: flex;
+}
+
+.card{
+ width: 160px;  
+ margin-left: 20px;
+ position: relative;
+}
+
+.card > *{
+    margin-top: 5px;
+}
+
+.card h3{
+    font-weight: 400;
+}
+
+.card p{
+    font-weight: 400;
+    color: rgb(173, 170, 170);
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.play{
+    position: absolute;
+    right: 10px;
+    bottom: 55px;
+}

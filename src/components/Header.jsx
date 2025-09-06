@@ -9,7 +9,7 @@ import { Link } from 'react-router';
 export default function Header() {
   return (
     <div>
-      <div className="header border flex">
+      <div className="header flex">
             <img src={logo} className="invert" id="logo" alt="logo"/>
 
             <button className="home-btn">
