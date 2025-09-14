@@ -59,7 +59,7 @@ export default function Hero() {
                 </div>
                 <div className="mid">
 
-                    <div className="divider-line hidden"></div>
+                    <div className="divider-line"></div>
                 </div>
                 <div className="right">
                     <div className="spotify-playlists">

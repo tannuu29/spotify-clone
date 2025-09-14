@@ -14,17 +14,16 @@
 .lang-btn p{
     color: white;
 }
+
 .create-container{
     background-color: rgb(54, 54, 54);
     height: 19vh;
     border-radius: 0.6rem;
     margin-top: 10px;
-}
-
-.create-container{
     padding: 0.5rem;
     margin: 0.4rem ;
 }
+
 .create-span span{
     display: block;
     margin: 0.6rem;
@@ -42,35 +41,46 @@
 
 .card-container{
     display: flex;
-     display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  overflow-y: auto;
-  overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 5px;
 }
 
-/* Works in Chrome, Edge, Safari */
+/* Spotify-like scrollbar */
+
+/* For Chrome, Edge, Safari */
 ::-webkit-scrollbar {
-  width: 10px;              /* width of vertical scrollbar */
+  width: 12px;         /* very thin */
 }
 
 ::-webkit-scrollbar-track {
-  background: #121212;      /* dark background (track) */
+  background: transparent;  /* no track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #444;         /* grey thumb */
-  border-radius: 6px;       /* rounded edges */
+  background-color: rgba(255, 255, 255, 0.2); /* subtle light thumb */
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #666;         /* lighter on hover */
+  background-color: rgba(255, 255, 255, 0.4); /* brighter on hover */
 }
 
-/* Works in Firefox */
-* {
-  scrollbar-width: thin;           /* thin scrollbar */
-  scrollbar-color: #444 #121212;   /* thumb color | track color */
+/* Hide arrows */
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
 }
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;                  /* thin scrollbar */
+  scrollbar-color: rgba(255,255,255,0.2) transparent; 
+}
+
 
 
 .card{
@@ -91,6 +101,7 @@
     font-weight: 400;
     color: rgb(173, 170, 170);
 }
+
 .card img{
     width: 100%;
     object-fit: contain;

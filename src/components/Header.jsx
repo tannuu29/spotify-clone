@@ -35,8 +35,8 @@ export default function Header() {
                         href="https://www.spotify.com/in-en/premium/">Download </a>
                 </span>
                 <div className="nav-div">
-                    <img src={install} className=" nav-img invert" alt="install"/>
-                    <span>Install App</span>
+                    <img src={install} className="nav-img invert" alt="install"/>
+                    <button className='install'>Install App</button>
                 </div>
                 <div className="buttons">
                     <button className="signup">Sign up</button>

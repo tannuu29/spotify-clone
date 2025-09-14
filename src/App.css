@@ -12,6 +12,21 @@ body {
     color: #fff;
 }
 
+/* Apply to the whole page */
+html,
+body {
+    overflow-x: hidden;
+    /* 🚫 no horizontal scroll */
+}
+
+/* If you only want to lock certain sections */
+.container,
+.right,
+.left {
+    overflow-x: hidden;
+}
+
+
 .header {
     display: flex;
     align-items: center;
@@ -112,12 +127,19 @@ body {
 }
 
 .nav span {
-    gap: 0.4rem;
+    gap: 0.5rem;
 }
 
 .nav a {
+    font-size: 1rem;
     color: #bbbbbb;
     text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.nav a:hover{
+    transform: scale(1.05);
+    color: #fff;
 }
 
 .nav-div {
@@ -126,14 +148,33 @@ body {
     justify-content: center;
     gap: 0.5rem;
 }
+
 .nav-img {
     margin-left: 3.75rem;
     width: 1.25rem;
     height: 1.25rem;
+    transition: transform 0.2s ease;
 }
 
-.nav-div span {
+.install {
+     border: none;
     color: #bbbbbb;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-div:hover {
+    transform: scale(1.05); /* grow the whole block */
+}
+
+.nav-div:hover .install {
+    color: #fff; /* brighten text */
+}
+
+.nav-div:hover .nav-img {
+    filter: brightness(2); /* brighten icon */
 }
 
 .buttons {
@@ -150,6 +191,12 @@ body {
     background-color: transparent;
     cursor: pointer;
     font-size: 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.signup:hover{
+    transform: scale(1.05);
+    color: #fff;
 }
 
 .login {
@@ -164,19 +211,29 @@ body {
 
 .container {
     height: 40vw;
+    overflow: hidden;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 30vw;
-    height: 80vh;
+    width: 28vw;
+    height: 85vh;
     background-color: #121212;
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 8px;
     margin-left: 10px;
+    flex-shrink: 0;
+    position: fixed;
+    /* keep it fixed */
+    /* top: 0;
+    left: 0;
+    bottom: 0; */
+    overflow-y: auto;
+    /* if sidebar has its own scroll */
+    overflow-x: hidden;
     /* position: relative; */
 }
 
@@ -199,12 +256,12 @@ body {
     transition: margin-left 0.3s ease;
 }
 
-.create-box{
+.create-box {
     max-height: 25vh;
     overflow: scroll;
 }
-.create-btn {
 
+.create-btn {
     width: 2rem;
     height: 2.1875rem;
     /* border-radius: 1.25rem; */
@@ -231,10 +288,11 @@ body {
 }
 
 .link {
-    display:grid;
-    grid-template-columns: repeat(4,auto);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     gap: 0.75rem 1rem;
 }
+
 .link a {
     white-space: nowrap;
     text-decoration: none;
@@ -307,29 +365,51 @@ gap: 0.625rem;
     opacity: 0.6;
     filter: brightness(90%);
 } */
-.mid{
-    width: 0.5rem;
+.mid {
+    /* width: 0.5rem; */
+    width: 1px;
+    background: #222;
+    margin-left: 400px
 }
-.divider-line{
+
+.divider-line {
     width: 0.02rem;
-    height: auto;
+    height: 90vh;
     margin: 0 0.5rem;
     background-color: #ccc;
+    visibility: hidden;
     opacity: 0;
     cursor: pointer;
+    transition: visibility 0s, opacity 0.3s ease;
+  
 }
-.divider-line:hover, .mid:hover{
+
+.divider-line:hover,
+.mid:hover {
+    visibility: visible;
     opacity: 1;
 }
 
 .right {
-    width: 75vw;
+    /* width: 75vw; */
+    width: calc(100% - 280px);
+    /* takes remaining space */
     /* background-color: #121212;; */
     background: linear-gradient(to bottom, #1d1d1d, #121212);
     border-radius: 8px;
+    flex: 1;
+    margin-left: 5px;
+    /* push right next to left */
+    overflow-y: auto;
+    /* enable vertical scrolling */
+    overflow-x: hidden;
+    /* disable horizontal scroll */
+    background: #121212;
+    /* dark background */
+    padding: 5px;
 }
 
-.spotify-playlists{
+.spotify-playlists {
     font-size: 0.9rem;
     padding: 1rem;
 }
