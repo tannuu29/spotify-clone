@@ -78,6 +78,10 @@ body {
     align-items: center;
 }
 
+.search-container input:hover{
+    background-color: #333;
+}
+
 .search-container input {
     width: 22rem;
     height: 2.5rem;

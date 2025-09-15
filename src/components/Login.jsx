@@ -6,7 +6,8 @@ import google from '../assets/images/google.svg'
 import facebook from '../assets/images/facebook.svg'
 import phone from '../assets/images/phone.svg'
 
-export default function Login({ onClose }) {
+export default function Login({ onClose, onSwitchToSignup }) {
+  
   const handleOverlayClick = (e) => {
     if (e.target.classList.contains("login-overlay")) {
       onClose();
@@ -42,7 +43,8 @@ export default function Login({ onClose }) {
           Close
         </button> */}
 
-        <div className='signup-switch'>Don't have an account? <button>Sign up for Spotify.</button></div>
+        <div className='signup-switch'>Don't have an account? 
+          <button onClick={onSwitchToSignup}>Sign up for Spotify.</button></div>
       </div>
     </ div>
       )

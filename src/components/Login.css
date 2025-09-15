@@ -28,6 +28,15 @@
   width: 400px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
   text-align: center;
+  max-height: 90vh;
+  /* set how tall you want the block */
+  overflow-y: auto;
+  /* enable vertical scroll */
+  overflow-x: hidden;
+  /* prevent horizontal scroll */
+  padding-right: 5px;
+  padding-top: 7rem;
+  box-sizing: border-box;
 }
 
 .close-btn {
@@ -67,7 +76,6 @@
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-
 }
 
 .with button:hover {
@@ -84,11 +92,10 @@
 
 .divider-horiz {
   width: 90%;
-  height: 0.2px;
   margin: 0 0.5rem;
-  background-color: #afadad;
+  border-top: 1px solid #afadad;
   margin: 15px;
-  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .input-group {
@@ -138,7 +145,20 @@
   font-weight: 700;
 }
 
-.continue-btn:hover {
+.next-btn{
+   width: 85%;
+  padding: 12px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 20px;
+  background: rgb(45, 189, 45);
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.continue-btn:hover,
+.next-btn:hover {
   background: rgb(35, 160, 35);
   /* Darker green */
   font-size: 1.05rem;
@@ -148,13 +168,13 @@
   transition: all 0.2s ease-in-out;
 }
 
-.signup-switch{
+.signup-switch {
   margin-top: 50px;
   font-weight: 300;
   color: #bbb;
 }
 
-.signup-switch button{
+.signup-switch button {
   background: transparent;
   border: none;
   color: #fff;
@@ -162,3 +182,21 @@
   font-weight: 350;
   text-decoration: underline;
 }
+
+.switch-btn {
+  background: transparent;
+  border: none;
+  color: #1db954;
+  font-size: 16px;
+  font-weight: 350;
+  text-decoration: underline;
+   display: block;      
+  text-align: left; 
+  width: 90%;          
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* .switch-btn:hover{
+
+} */
