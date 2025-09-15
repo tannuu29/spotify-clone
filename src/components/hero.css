@@ -1,9 +1,40 @@
+.footer {
+    z-index: 1;
+    position: absolute;
+    margin-top: auto;
+    bottom: 7rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 0.75rem 1rem;
+}
+.link a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: #bbbbbb;
+}
+
+.cookies{
+  margin-top: 10px;
+}
+.cookies a{ 
+  font-size: 0.8rem;
+  font-weight: 350;
+  text-decoration: none;
+  color: #fff;
+}
 .lang-btn{
     display: flex;
     height: 30px;
     width: 100px;
     gap: 10px;
-    margin: 5px;
     border-radius: 40px;
     justify-content: center;
     align-items: center;

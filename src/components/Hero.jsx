@@ -47,7 +47,7 @@ export default function Hero() {
                             <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">AboutAds</a></div>
                             <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div>
                         </div>
-                        <div>
+                        <div className='cookies'>
                             <a href="https://www.spotify.com/legal/cookies-policy/"
                                 target="_blank" rel="noopener">Cookies</a>
                         </div>

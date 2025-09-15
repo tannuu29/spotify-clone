@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/images/logo.svg';
 import home from '../assets/images/home.svg';
 import search from '../assets/images/search.svg';
 import browse from '../assets/images/browse.svg';
 import install from '../assets/images/install.svg';
 import { Link } from 'react-router';
+import Login from './Login';
 
 export default function Header() {
+    const [showLogin, setShowLogin] = useState(false)
   return (
     <div>
       <div className="header flex">
@@ -40,7 +42,8 @@ export default function Header() {
                 </div>
                 <div className="buttons">
                     <button className="signup">Sign up</button>
-                   <Link to= "/login"> <button className="login">Log in</button></Link>
+                    <button className="login" onClick={()=> setShowLogin(true)}>Log in</button>
+                   {showLogin && <Login onClose={() => setShowLogin(false)}/>}
                           {/* <Button href="/login">Link</Button>  */}
                     
 {/* <Link to="/login" className="login button-like" style={{textAlign:'center', justifyItems:'center' }} >Log in</Link> */}

@@ -279,27 +279,6 @@ body {
     opacity: 0.8;
 }
 
-.footer {
-    z-index: 1;
-    position: absolute;
-    margin-top: auto;
-    bottom: 7rem;
-    padding: 1rem;
-}
-
-.link {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 0.75rem 1rem;
-}
-
-.link a {
-    white-space: nowrap;
-    text-decoration: none;
-    font-size: 0.75rem;
-    color: #bbbbbb;
-}
-
 
 /* .expand-btn {
     width: 1.25rem;
@@ -380,8 +359,7 @@ gap: 0.625rem;
     visibility: hidden;
     opacity: 0;
     cursor: pointer;
-    transition: visibility 0s, opacity 0.3s ease;
-  
+    /* transition: visibility 0s, opacity 0.3s ease; */
 }
 
 .divider-line:hover,

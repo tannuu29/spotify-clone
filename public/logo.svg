@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
   <!-- Green background -->
-  <circle cx="12" cy="12" r="12" fill="green" />
+  <circle cx="12" cy="12" r="12" fill="rgb(45, 189, 45)" />
 
   <!-- Three black arcs -->
   <path d="M17.59 16.42a.75.75 0 0 1-1.03.28c-2.8-1.67-6.33-2.05-10.47-1.12a.75.75 0 0 1-.33-1.46c4.54-1.03 8.47-.6 11.64 1.3a.75.75 0 0 1 .29.99z" fill="black"/>
